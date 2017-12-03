@@ -25,7 +25,7 @@ a1 = X;
 a2 = sigmoid(Theta1*a1'); %25 *5000
 a2 = [ones(m,1) a2'];
 h = sigmoid(Theta2*a2');
-[i,p] = max(h', [], 2);
+[i,p] = max(h, [], 1);
 
 
 
